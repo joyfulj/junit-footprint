@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+     
+   <extension
+         point="org.eclipse.jdt.junit.testRunListeners">
+         <testRunListener class="junitfootprint.footprint.FootPrintTestRunListener"/>
+   </extension>
+   
+   <extension id="junitfootprint.footprint.view" name="Test Footprint" point="org.eclipse.ui.views">
+      <category id="junitfootprint.footprint.view.category.id" name="Test Footprint">
+      </category>
+      <view category="junitfootprint.footprint.view.category.id" class="junitfootprint.footprint.FootPrintViewPart" icon="icons/logo16.png" id="junitfootprint.footprint.FootPrintViewPart" name="Test Footprint">
+      </view>
+   </extension>
+	
+</plugin>
